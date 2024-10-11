@@ -1,0 +1,33 @@
+name: 💡 Feature request
+description: Create a feature request
+title: "[FEATURE]: <concise title>"
+labels: ['feature, untriaged']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this feature request!
+  - type: textarea
+    id: feature
+    attributes:
+      label: What is the feature?
+      description: What do you want this feature to do?
+      placeholder: Tell us what you think could be enhanced and why.
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribs
+    attributes:
+      label: Contributions
+      description: Please review our developer documentation before contributing.
+      options:
+        - label: I have read the contribution guidelines
+          required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our policies and Code of Conduct
+      options:
+        - label: I agree
+          required: true
